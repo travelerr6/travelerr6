@@ -39,12 +39,13 @@ Real-time N-body orbital mechanics with Barnes-Hut tree approximation, physicall
 
 | | |
 |---|---|
-| **Languages** | C++17 · Python · JavaScript / TypeScript |
-| **Backend** | Flask · FastAPI · Node.js |
-| **Frontend** | React · HTML/CSS |
-| **AI / ML** | Sentence Transformers · Pinecone · LaBSE · Gemini API |
-| **Systems** | POSIX Sockets · Docker · WAL · Consistent Hashing |
-| **Databases** | PostgreSQL · Supabase · SQLite |
+| **Languages** | C++17 · Python · JavaScript |
+| **Backend** | Flask · FastAPI · Microsoft Graph API |
+| **Frontend** | React.js · Three.js |
+| **AI / ML** | LLMs · Fine-tuning · QLoRA / PEFT · AI Agents / Agentic Workflows · Sentence Transformers · Pinecone |
+| **Databases** | PostgreSQL |
+| **DevOps** | Azure DevOps Services · CI/CD · Docker |
+| **Low-level / C++** | POSIX Sockets · Distributed Systems · Consistent Hashing · Quorum Replication · Write-Ahead Log |
 
 ---
 
