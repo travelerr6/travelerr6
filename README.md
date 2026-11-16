@@ -12,11 +12,12 @@
 
 ## 👋 about
 
-Software developer. I love building things, mostly in C++: distributed systems, simulators, and low-latency code. I also build LLM tooling in Python, and I spend a lot of time thinking about space.
+I do what I love to do. Mostly that means building things that go deep.
 
+- 🛠️ Building: anything deep, mostly in C++ and Python
+- 🔭 Looking up: always
+- 🧭 Exploring: finding funds and time to travel, new places, new ideas
 - 🎓 B.Tech CSE, Jaypee University of Information Technology (2025)
-- 🧮 700+ DSA problems, C++17
-- 🔭 Space nerd
 
 ---
 
