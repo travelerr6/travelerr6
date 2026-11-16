@@ -1,27 +1,34 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" width="800" height="320">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0d1117"/>
-      <stop offset="100%" stop-color="#05060f"/>
+      <stop offset="0%" stop-color="#05060d"/>
+      <stop offset="100%" stop-color="#02030a"/>
     </linearGradient>
+    <!-- disk: brighter on the approaching (left) side, fading to the edges -->
     <linearGradient id="disk" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#7a2e0c" stop-opacity="0"/>
-      <stop offset="25%" stop-color="#e8590c"/>
-      <stop offset="50%" stop-color="#ffd8a8"/>
-      <stop offset="75%" stop-color="#e8590c"/>
-      <stop offset="100%" stop-color="#7a2e0c" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#8a3a10" stop-opacity="0"/>
+      <stop offset="12%" stop-color="#d9631a" stop-opacity=".8"/>
+      <stop offset="35%" stop-color="#ffd9a0"/>
+      <stop offset="50%" stop-color="#fffaf0"/>
+      <stop offset="65%" stop-color="#ffc47a" stop-opacity=".9"/>
+      <stop offset="88%" stop-color="#b8480f" stop-opacity=".5"/>
+      <stop offset="100%" stop-color="#8a3a10" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="halo" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff9a3c" stop-opacity=".2"/>
+      <stop offset="30%" stop-color="#ffe2b8"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="70%" stop-color="#ffd09a"/>
+      <stop offset="100%" stop-color="#ff9a3c" stop-opacity=".2"/>
     </linearGradient>
     <radialGradient id="glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ff922b" stop-opacity=".35"/>
-      <stop offset="100%" stop-color="#ff922b" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#ffb066" stop-opacity=".28"/>
+      <stop offset="60%" stop-color="#ff7a1a" stop-opacity=".07"/>
+      <stop offset="100%" stop-color="#ff7a1a" stop-opacity="0"/>
     </radialGradient>
-    <filter id="blur" x="-20%" y="-50%" width="140%" height="200%">
-      <feGaussianBlur stdDeviation="4"/>
-    </filter>
-    <filter id="soft" x="-20%" y="-50%" width="140%" height="200%">
-      <feGaussianBlur stdDeviation="1.2"/>
-    </filter>
-    <clipPath id="bottomHalf"><rect x="0" y="160" width="800" height="160"/></clipPath>
+    <filter id="blurBig" x="-30%" y="-100%" width="160%" height="300%"><feGaussianBlur stdDeviation="6"/></filter>
+    <filter id="blurMid" x="-30%" y="-100%" width="160%" height="300%"><feGaussianBlur stdDeviation="2.5"/></filter>
+    <filter id="blurSm" x="-30%" y="-100%" width="160%" height="300%"><feGaussianBlur stdDeviation="0.8"/></filter>
   </defs>
 
   <rect width="800" height="320" fill="url(#bg)" rx="12"/>
@@ -29,43 +36,45 @@
   <!-- stars -->
   <g fill="#ffffff">
     <circle cx="40" cy="40" r="1.2"><animate attributeName="opacity" values="1;.2;1" dur="3s" repeatCount="indefinite"/></circle>
-    <circle cx="120" cy="270" r="1"><animate attributeName="opacity" values=".3;1;.3" dur="4s" repeatCount="indefinite"/></circle>
-    <circle cx="210" cy="60" r="1.5"><animate attributeName="opacity" values="1;.3;1" dur="5s" repeatCount="indefinite"/></circle>
-    <circle cx="300" cy="285" r="1"><animate attributeName="opacity" values=".2;1;.2" dur="2.5s" repeatCount="indefinite"/></circle>
-    <circle cx="560" cy="35" r="1.3"><animate attributeName="opacity" values="1;.2;1" dur="3.5s" repeatCount="indefinite"/></circle>
-    <circle cx="690" cy="265" r="1.1"><animate attributeName="opacity" values=".4;1;.4" dur="4.5s" repeatCount="indefinite"/></circle>
-    <circle cx="760" cy="90" r="1.4"><animate attributeName="opacity" values="1;.3;1" dur="3s" repeatCount="indefinite"/></circle>
-    <circle cx="90" cy="150" r="1"/>
-    <circle cx="730" cy="190" r="1"/>
-    <circle cx="470" cy="300" r="1"/>
-    <circle cx="640" cy="60" r="1"/>
+    <circle cx="120" cy="275" r="1"><animate attributeName="opacity" values=".3;1;.3" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="205" cy="55" r="1.5"><animate attributeName="opacity" values="1;.3;1" dur="5s" repeatCount="indefinite"/></circle>
+    <circle cx="295" cy="285" r="1"><animate attributeName="opacity" values=".2;1;.2" dur="2.5s" repeatCount="indefinite"/></circle>
+    <circle cx="565" cy="32" r="1.3"><animate attributeName="opacity" values="1;.2;1" dur="3.5s" repeatCount="indefinite"/></circle>
+    <circle cx="690" cy="268" r="1.1"><animate attributeName="opacity" values=".4;1;.4" dur="4.5s" repeatCount="indefinite"/></circle>
+    <circle cx="762" cy="88" r="1.4"><animate attributeName="opacity" values="1;.3;1" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="85" cy="150" r=".9"/>
+    <circle cx="735" cy="195" r=".9"/>
+    <circle cx="470" cy="302" r=".9"/>
+    <circle cx="640" cy="62" r=".9"/>
+    <circle cx="330" cy="30" r=".8"/>
   </g>
 
   <!-- ambient glow -->
-  <ellipse cx="400" cy="160" rx="260" ry="120" fill="url(#glow)"/>
+  <ellipse cx="400" cy="160" rx="300" ry="110" fill="url(#glow)"/>
 
-  <!-- back half of accretion disk (behind the hole) -->
-  <ellipse cx="400" cy="160" rx="230" ry="38" fill="none" stroke="url(#disk)" stroke-width="14" filter="url(#blur)" opacity=".8"/>
-  <ellipse cx="400" cy="160" rx="200" ry="30" fill="none" stroke="url(#disk)" stroke-width="5" opacity=".9"/>
+  <!-- lensed far side of the disk: bent over the top and under the bottom of the shadow -->
+  <path d="M 322 162 A 80 78 0 0 1 478 162" fill="none" stroke="url(#halo)" stroke-width="14" filter="url(#blurBig)" opacity=".85"/>
+  <path d="M 322 162 A 80 78 0 0 1 478 162" fill="none" stroke="url(#halo)" stroke-width="5" filter="url(#blurMid)"/>
+  <path d="M 322 162 A 80 78 0 0 1 478 162" fill="none" stroke="url(#halo)" stroke-width="1.8" filter="url(#blurSm)"/>
 
-  <!-- lensed light bent over the top and under the bottom -->
-  <ellipse cx="400" cy="160" rx="92" ry="64" fill="none" stroke="#ffb066" stroke-width="3" opacity=".55" filter="url(#soft)"/>
+  <path d="M 336 160 A 66 62 0 0 0 464 160" fill="none" stroke="url(#halo)" stroke-width="10" filter="url(#blurBig)" opacity=".7"/>
+  <path d="M 336 160 A 66 62 0 0 0 464 160" fill="none" stroke="url(#halo)" stroke-width="3" filter="url(#blurMid)" opacity=".95"/>
+  <path d="M 336 160 A 66 62 0 0 0 464 160" fill="none" stroke="url(#halo)" stroke-width="1.2" filter="url(#blurSm)"/>
 
-  <!-- event horizon -->
-  <circle cx="400" cy="160" r="52" fill="#000"/>
-  <circle cx="400" cy="160" r="53" fill="none" stroke="#ffd8a8" stroke-width="2" opacity=".9"/>
+  <!-- shadow of the hole -->
+  <circle cx="400" cy="160" r="50" fill="#000"/>
+  <circle cx="400" cy="160" r="51" fill="none" stroke="#fff4e0" stroke-width="1.1" opacity=".75"/>
 
-  <!-- front half of accretion disk (in front of the hole) -->
-  <g clip-path="url(#bottomHalf)">
-    <ellipse cx="400" cy="160" rx="230" ry="38" fill="none" stroke="url(#disk)" stroke-width="14" filter="url(#blur)"/>
-    <ellipse cx="400" cy="160" rx="200" ry="30" fill="none" stroke="url(#disk)" stroke-width="5"/>
-  </g>
+  <!-- the disk, seen nearly edge-on, in front of the hole -->
+  <ellipse cx="400" cy="160" rx="285" ry="13" fill="url(#disk)" filter="url(#blurBig)" opacity=".55"/>
+  <ellipse cx="400" cy="160" rx="270" ry="6" fill="url(#disk)" filter="url(#blurMid)"/>
+  <ellipse cx="400" cy="160" rx="255" ry="2" fill="url(#disk)"/>
 
-  <!-- swirling matter -->
-  <ellipse cx="400" cy="160" rx="215" ry="34" fill="none" stroke="#ffe8cc" stroke-width="1.5" stroke-dasharray="3 22" stroke-linecap="round" opacity=".8">
-    <animate attributeName="stroke-dashoffset" from="0" to="-125" dur="4s" repeatCount="indefinite"/>
+  <!-- matter streaming around the disk -->
+  <ellipse cx="400" cy="160" rx="245" ry="5" fill="none" stroke="#fff3df" stroke-width="1.2" stroke-dasharray="2 26" stroke-linecap="round" opacity=".8">
+    <animate attributeName="stroke-dashoffset" from="0" to="-112" dur="4s" repeatCount="indefinite"/>
   </ellipse>
-  <ellipse cx="400" cy="160" rx="175" ry="26" fill="none" stroke="#ffc078" stroke-width="1.5" stroke-dasharray="2 18" stroke-linecap="round" opacity=".7">
-    <animate attributeName="stroke-dashoffset" from="0" to="-100" dur="2.6s" repeatCount="indefinite"/>
+  <ellipse cx="400" cy="160" rx="190" ry="4" fill="none" stroke="#ffd3a0" stroke-width="1.2" stroke-dasharray="2 20" stroke-linecap="round" opacity=".7">
+    <animate attributeName="stroke-dashoffset" from="0" to="-88" dur="2.8s" repeatCount="indefinite"/>
   </ellipse>
 </svg>
