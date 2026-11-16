@@ -1,28 +1,28 @@
 <h1 align="center">Arpan Chauhan</h1>
 
 <p align="center">
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=1000&color=58A6FF&center=true&vCenter=true&width=640&lines=Software+Engineer;AI+%2F+ML+%C2%B7+Python+%C2%B7+C%2B%2B17;Systems+first.+Space+eventually." alt="Typing SVG" /></a>
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=1000&color=58A6FF&center=true&vCenter=true&width=640&lines=I+love+building+things;Mostly+in+C%2B%2B;And+I+love+space" alt="Typing SVG" /></a>
 </p>
 
 <p align="center">
-  <img src="orbit.svg" alt="orbit animation" width="100%" />
+  <img src="assets/blackhole.svg" alt="black hole animation" width="100%" />
 </p>
 
 ---
 
-## 🧑‍🚀 mission briefing
+## 👋 about
 
-Software developer building LLM tooling, low-latency C++ systems, and whatever is interesting enough to build.
+Software developer. I love building things, mostly in C++: distributed systems, simulators, and low-latency code. I also build LLM tooling in Python, and I spend a lot of time thinking about space.
 
 - 🎓 B.Tech CSE, Jaypee University of Information Technology (2025)
-- 🧮 700+ DSA problems, C++17 and systems background
-- 🔭 Long-term trajectory: space and low-latency infrastructure
+- 🧮 700+ DSA problems, C++17
+- 🔭 Space nerd
 
 ---
 
-## 🚀 missions
+## 🚀 projects
 
-### 🛰️ Constella + Constella Lens
+### 🔵 Constella + Constella Lens
 Distributed key-value store (C++17): consistent hashing (150 virtual nodes), quorum replication, WAL persistence, 4-byte TCP framing, TTL-based dedup, Docker deployment.
 On top of it, **Constella Lens**: semantic log intelligence with `all-MiniLM-L6-v2`, Pinecone and a Flask API with a terminal-style UI.
 
@@ -35,9 +35,9 @@ Real-time N-body orbital mechanics with Barnes-Hut tree approximation, physicall
 
 ---
 
-## 🧰 flight instruments
+## 🧰 stack
 
-| Subsystem | Tools |
+| | |
 |---|---|
 | **Languages** | C++17 · Python · JavaScript / TypeScript |
 | **Backend** | Flask · FastAPI · Node.js |
@@ -48,24 +48,16 @@ Real-time N-body orbital mechanics with Barnes-Hut tree approximation, physicall
 
 ---
 
-## 📡 telemetry
+## 📊 stats
 
 <p align="center">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=travelerr6&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" alt="GitHub Stats" />
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=travelerr6&layout=compact&theme=tokyonight&hide_border=true&langs_count=6" alt="Top Languages" />
+  <img src="profile-summary-card-output/tokyonight/3-stats.svg" width="49%" alt="GitHub stats" />
+  <img src="profile-summary-card-output/tokyonight/2-most-commit-language.svg" width="49%" alt="Most used languages" />
 </p>
 
 ---
 
-## 🌌 current trajectory
-
-- 🤖 **Now:** targeting AI/ML roles, learning and building
-- 🛰️ **Next:** systems roles in space / HFT / low-latency infra
-- 🔭 **Always:** looking up
-
----
-
-## 📬 open a channel
+## 📬 contact
 
 <p align="center">
   <a href="https://linkedin.com/in/arpan-chauhan-7248a0202"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
