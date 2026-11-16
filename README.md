@@ -2,7 +2,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:1f3a93&height=180&section=header&text=Arpan%20Chauhan&fontColor=ffffff&fontSize=44&fontAlignY=38&desc=Mission%20control%20for%20AI%2FML%20%26%20low-latency%20systems&descAlignY=60&descSize=16" alt="header"/>
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=1000&color=58A6FF&center=true&vCenter=true&width=640&lines=Software+Engineer+%F0%9F%9B%B0%EF%B8%8F;AI+%2F+ML+%C2%B7+Python+%C2%B7+C%2B%2B17;Systems+first.+Space+eventually.)](https://git.io/typing-svg)
  
-<img src="assets/orbit.svg" alt="orbit animation" width="100%"/>
+<img src="orbit.svg" alt="orbit animation" width="100%"/>
 </div>
 ---
  
