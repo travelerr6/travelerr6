@@ -8,7 +8,6 @@
   <img src="assets/blackhole.svg" alt="black hole animation" width="100%" />
 </p> -->
 
----
 
 ## 👋 about
 
