@@ -4,9 +4,9 @@
   <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=1000&color=58A6FF&center=true&vCenter=true&width=640&lines=I+love+building+things;Mostly+in+C%2B%2B;And+I+love+space" alt="Typing SVG" /></a>
 </p>
 
-<p align="center">
+<!-- <p align="center">
   <img src="assets/blackhole.svg" alt="black hole animation" width="100%" />
-</p>
+</p> -->
 
 ---
 
